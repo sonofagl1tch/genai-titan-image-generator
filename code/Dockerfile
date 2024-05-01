@@ -1,5 +1,5 @@
 #FROM --platform=linux/x86_64 python:3.9
-FROM public.ecr.aws/lambda/python:3.9
+FROM --platform=linux/x86_64 public.ecr.aws/lambda/python:3.9
 # FROM amazon/aws-lambda-python:latest
 # Copy function code
 COPY requirements.txt .
